@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
-
-app.set('port', process.env.PORT || 8080)
+const PORT = process.env.PORT || 8080
 
 // console.log(process.env)
 const currentTime = () => {
@@ -16,8 +15,8 @@ app.get('/time', (req, res, next) => {
   console.log(`This page loaded at ${currentTime()}`)
 })
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}...`)
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}...`)
 })
 
 // ## Requirements
