@@ -10,16 +10,17 @@ app.set('view engine', 'pug')
 
 // define routes
 app.get('/', (req, res, next) => {
-  res.render('index', {currentPage: "home"})
+  res.render('home', {currentPage: "home"})
 })
 
-app.get('/about', (req, res, next) => {
-  res.render('about', {currentPage: "about"})
+// using express route params
+app.get('/:pageName', (req, res, next) => {
+  res.render(req.params.pageName, {currentPage: req.params.pageName})
 })
 
-app.get('/inventory', (req, res, next) => {
-  res.render('inventory', {currentPage: "inventory"})
-})
+// app.get('/inventory', (req, res, next) => {
+//   res.render('index', {currentPage: "inventory"})
+// })
 
 app.listen(port, () => {
   console.log(`Listening on port: ${port}...`)
