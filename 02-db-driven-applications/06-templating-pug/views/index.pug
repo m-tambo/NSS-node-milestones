@@ -2,7 +2,10 @@ doctype html
 html
   head
     title bakery index
-
+    include stylesheets.pug
   body
+
     include nav.pug
-    h1 Bakery home page
+    block content
+
+  script(src="../node_modules/jquery/dist/jquery.min.js")
