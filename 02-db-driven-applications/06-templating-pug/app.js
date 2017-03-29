@@ -3,7 +3,8 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
-const inventory = require('./public/data/inventory.json')
+const { inventory } = require('./public/data/inventory.json')
+const currentDate = () => new Date()
 
 app.use(express.static('public'))
 
