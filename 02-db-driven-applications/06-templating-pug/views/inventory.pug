@@ -2,3 +2,8 @@ extends index.pug
 
 block content
   h1.head Billy's Inventory
+  ul.card
+    each item in inventory
+      .list
+        li.bump= item.type + ' .....  $' + item.price
+        img.bump.donut-pic(src=item.pic)
