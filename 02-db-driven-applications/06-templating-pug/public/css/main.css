@@ -16,9 +16,17 @@ li {
 }
 
 .bump {
-  margin-left: 10%;
+  margin: 10%;
 }
 
-img {
-  max-height: 200px;
+.donut-pic {
+  max-height: 100px;
+}
+
+.card {
+  display: inline-flex;
+}
+
+.card-item {
+  justify-content: space-around;
 }
