@@ -1,0 +1,30 @@
+{
+  "inventory":
+  [
+    {
+      "type": "Bear Claw",
+      "price": "1.79",
+      "pic": "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=&url=http%3A%2F%2Fwww.seriouseats.com%2Ftalk%2F2011%2F09%2Fbear-claw-donuts.html&psig=AFQjCNGe-Is4t-dSC_7tzMtVotQSmNQW9A&ust=1490846681544033"
+    },
+    {
+      "type": "Glazed Raised",
+      "price": ".89",
+      "pic": "http://www.thenewstribune.com/entertainment/restaurants/tnt-diner/ico1v/picture80792487/ALTERNATES/FREE_640/wYummies%20raised%20and%20glazed"
+    },
+    {
+      "type": "Apple Fritter",
+      "price": "1.69",
+      "pic": "http://s3.amazonaws.com/storage.realcheapeats.com/photos/712ec30d63316200020f0100/original.jpg?1404685199"
+    },
+    {
+      "type": "Custard Bismark",
+      "price": ".99",
+      "pic": "https://c1.staticflickr.com/1/221/490289476_1f1ff182e1_z.jpg?zz=1"
+    },
+    {
+      "type": "Long John",
+      "price": "1.29",
+      "pic": "https://thumbs.dreamstime.com/x/donut-old-fashioned-long-john-style-6545867.jpg"
+    }
+  ]
+}
