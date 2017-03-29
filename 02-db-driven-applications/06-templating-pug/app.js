@@ -3,6 +3,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
+const inventory = require('./public/data/inventory.json')
 
 app.use(express.static('public'))
 
@@ -15,7 +16,7 @@ app.get('/', (req, res, next) => {
 
 // using express route params
 app.get('/:pageName', (req, res, next) => {
-  res.render(req.params.pageName, {currentPage: req.params.pageName})
+  res.render(req.params.pageName, {currentPage: req.params.pageName, inventory})
 })
 
 // app.get('/inventory', (req, res, next) => {
