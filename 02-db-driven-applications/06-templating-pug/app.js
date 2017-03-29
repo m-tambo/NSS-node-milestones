@@ -17,7 +17,7 @@ app.get('/', (req, res, next) => {
 
 // using express route params
 app.get('/:pageName', (req, res, next) => {
-  res.render(req.params.pageName, {currentPage: req.params.pageName, inventory})
+  res.render(req.params.pageName, {currentPage: req.params.pageName, inventory, currentDate})
 })
 
 // app.get('/inventory', (req, res, next) => {
